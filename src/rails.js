@@ -43,6 +43,7 @@
 			data = null;
 		}
 			$.ajax({
+                context: element,
 				url: url, type: method || 'GET', data: data, dataType: dataType,
 				// stopping the "ajax:beforeSend" event will cancel the ajax request
 				beforeSend: function(xhr, settings) {
